@@ -1,0 +1,54 @@
+/* Navbar Styles */
+.nav {
+      justify-content: flex-end;
+}
+
+.con {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(101, 100, 100, 0.684);
+      padding: 16px;
+      width: 60%;
+      color: rgb(51, 178, 233);
+      border-top-right-radius: 12px;
+      border-bottom-left-radius: 12px;
+}
+
+.toggle-nav-btn {
+      display: none;
+      background-color: #333;
+      color: white;
+      padding: 11px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      position: absolute;
+      right: 10px;
+      height: 58px;
+}
+
+@media (max-width: 768px) {
+      .toggle-nav-btn {
+            display: block;
+            right: 15px;
+      }
+
+      .nav {
+            display: none;
+            margin-right: 40px;
+      }
+
+      .nav.sticky-top {
+            display: block;
+      }
+      .con {
+            width: 100%;
+            align-items: flex-end;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            border-bottom-left-radius: 0px;
+      }
+}
